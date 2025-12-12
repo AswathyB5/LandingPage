@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import illustration from '../assets/illustration.png';
+import illustration from '../assets/illustration.png'
 
 function CTA() {
     return (
