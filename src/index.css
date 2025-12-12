@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #B9FF66;
+  --color-dark: #191A23;
+  --color-grey: #F3F3F3;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --border-radius-large: 45px;
+  --border-radius-card: 45px;
+  --shadow-card: 0px 5px 0px 0px #191A23;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* Override Bootstrap link colors */
+.text-primary,
+a.text-primary {
+  color: var(--color-primary) !important;
+}
+
+/* For links that should be lime green by default */
+a[href]:not(.btn):not(.nav-link):not(.text-white):not(.text-dark):not(.text-secondary) {
+  color: var(--color-primary);
+}
+
+/* Typography Scale */
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  /* Desktop H1 */
+  h2 {
+    font-size: 60px;
+  }
+
+  /* Desktop H2 */
+  h3 {
+    font-size: 40px;
+  }
+
+  /* Desktop H3 */
+  h4 {
+    font-size: 24px;
+  }
+
+  /* Desktop H4 */
+}
+
+/* Utilities */
+.bg-lime {
+  background-color: var(--color-primary);
+}
+
+.bg-dark-custom {
+  background-color: var(--color-dark);
+  color: white;
+}
+
+.bg-grey {
+  background-color: var(--color-grey);
+}
+
+.bg-black {
+  background-color: var(--color-black);
+  color: white;
+}
+
+.btn-primary-custom {
+  background-color: var(--color-dark);
+  color: white;
+  padding: 18px 32px;
+  border-radius: 14px;
+  border: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.btn-primary-custom:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+  padding: 12px 28px;
+  border-radius: 14px;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+.section-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.section-label {
+  background-color: var(--color-primary);
+  padding: 0px 10px;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.section-description {
+  max-width: 580px;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card-custom {
+  border: 1px solid var(--color-dark);
+  border-radius: var(--border-radius-card);
+  padding: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s;
+}
+
+.card-custom.dark {
+  background-color: var(--color-dark);
+  color: white;
+}
+
+.card-custom.lime {
+  background-color: var(--color-primary);
+}
+
+.card-custom.grey {
+  background-color: var(--color-grey);
+}
+
+.learn-more-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.arrow-circle {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.card-custom.dark .arrow-circle {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+.card-custom.dark .learn-more-link {
+  color: white;
+}
